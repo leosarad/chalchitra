@@ -1,0 +1,134 @@
+.search-wrapper{
+     flex: auto;
+     display: flex;
+     flex-direction: column;
+     align-items: center; 
+     justify-content: flex-start;
+}
+
+
+
+.search-box input[type="text"]{
+     padding: 15px 30px;
+     width:450px;
+     outline: none;
+     border-top-left-radius: 30px;
+     border-bottom-left-radius: 30px;
+     background-color: #15171a;
+     border: 0px solid #000;
+     color: var(--colorB);
+     font-size: 1.2em;
+     text-transform: capitalize;
+}
+
+::placeholder{
+     color: #999;
+     font-size: 1em;
+}
+.search-box input:focus{
+     border: 3px solid var(--colorB);
+
+}
+
+.search-box button{
+     border-top-right-radius: 30px;    
+     border-bottom-right-radius: 30px;
+     font-weight: bolder;
+     font-size: 1.3em;
+     text-align: center;
+     width:80px;
+     border: 0px solid #000;
+     color: #fff;
+     background:linear-gradient(var(--colorA),var(--colorB));
+     cursor: pointer;
+}
+
+
+.search-wrapper .search-box .top{
+     display:flex;
+}
+
+
+.search-wrapper .search-box .bottom{
+     display:flex;
+     margin: 10px auto;
+     color: #999;
+     justify-content: space-around;
+     width: 300px;     
+}
+.bottom label{
+     cursor: pointer;
+}
+.bottom input{
+     margin: auto 8px;
+}
+.result-box{
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     background-color: #272727;
+     border-radius: 20px;
+     padding-bottom: 12px;
+     flex-wrap: wrap;
+}
+.result-box header{
+     margin: 8px auto;
+     text-transform: uppercase;
+     font-weight: bold;
+     letter-spacing: 0.1em;
+}
+.result-box .search-list{
+     margin: auto 20px;
+}
+.cards {
+     max-height:380px;
+     overflow-Y: scroll;
+     scrollbar-color: white #333;
+     display: flex;
+     flex-direction: column;
+     border-radius: 20px;
+     padding-right: 8px;
+}
+::-webkit-scrollbar {
+     width: 4px;
+}
+::-webkit-scrollbar-track {
+background: #333; 
+}
+
+::-webkit-scrollbar-thumb {
+background: linear-gradient(var(--colorA),var(--colorD))
+}
+   
+.movie-card{
+     margin:10px auto;
+     border-radius: 16px;
+}
+
+.movie-card .content{
+     display: flex;
+     width: 450px;
+     height:140px;
+     backdrop-filter: blur(30px);
+     border-radius: 16px;
+}
+.movie-card .poster{
+     border-radius: 15px;
+     background: linear-gradient(var(--colorA),var(--colorD))
+}
+.movie-card .details{
+     padding: 10px 15px;
+     width: 900px;
+}
+.movie-card .content .title{
+     font-size: 0.8em;
+     letter-spacing: 0.1em;
+     font-weight: bold;
+     text-transform: capitalize;
+}
+.content .overview{
+     font-size: 0.6em;
+     text-align: justify;
+     margin: 10px auto;
+     letter-spacing: 0.1em;
+}

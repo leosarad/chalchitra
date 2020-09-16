@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Ranchers&family=Roboto:wght@300&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css');
+
+:root{
+     --dark: #212121;
+     --colorA: #4fe0b5;
+     --colorB: #15cdcb;
+     --colorC: #5280e2;
+     --colorD: #3f54d1;
+}
+body{
+     margin: 0;
+     padding: 0;
+     background-color: var(--dark);
+     color: #fff;
+     font-family: 'Roboto', sans-serif;
+     /* overflow: hidden; */
+}
+
+.app{
+     display: flex;
+}
+.app .sidenav{
+     width:110px
+}
+.app .dashboard{
+     width:100%;
+}
